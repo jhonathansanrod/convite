@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário Mario & Jhonathan | Tema: Corinthians x São Paulo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Confetes (gerados por JavaScript) -->
+    <div id="confetti-container"></div>
+
+    <!-- Bolas de futebol decorativas -->
+    <div class="soccer-ball" style="top: 10%; left: 5%;"></div>
+    <div class="soccer-ball" style="top: 15%; right: 8%; animation-delay: -5s;"></div>
+    <div class="soccer-ball" style="bottom: 20%; left: 10%; animation-delay: -10s;"></div>
+
+    <div class="convite-container">
+        <div class="header">
+            <div class="birthday-badge">
+                <i class="fas fa-birthday-cake"></i>
+                <span>FESTA</span>
+            </div>
+
+            <h1 class="title">ANIVERSÁRIO<br><span>MARIO & JHONATHAN</span></h1>
+
+            <div class="theme-container">
+                <div class="theme">
+                    <span class="theme-corinthians">CORINTHIANS</span>
+                    <span class="theme-vs">×</span>
+                    <span class="theme-saopaulo">SÃO PAULO</span>
+                </div>
+            </div>
+
+            <p class="subtitle">Celebração temática do clássico paulista! Venha comemorar conosco em grande estilo.</p>
+        </div>
+
+        <div class="content">
+            <div class="details-card glass-card reveal">
+                <h3><i class="fas fa-info-circle"></i> DETALHES DO EVENTO</h3>
+
+                <div class="info-grid">
+                    <div class="info-item highlight">
+                        <div class="info-label"><i class="far fa-calendar"></i> DATA</div>
+                        <div class="info-value large">20 DE DEZEMBRO</div>
+                    </div>
+
+                    <div class="info-item highlight">
+                        <div class="info-label"><i class="far fa-clock"></i> HORÁRIO</div>
+                        <div class="info-value large">12:00 HORAS</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label"><i class="fas fa-palette"></i> TEMA</div>
+                        <div class="info-value">Festa Corinthians x São Paulo</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label"><i class="fas fa-tshirt"></i> TRAJE</div>
+                        <div class="info-value">Casual esportivo (cores do seu time)</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label"><i class="fas fa-utensils"></i> REFEIÇÃO</div>
+                        <div class="info-value">Churrasco e bebidas inclusas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teams-section">
+                <div class="birthday-people-section reveal">
+                    <div class="person-card mario glass-card">
+                        <div class="person-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h2 class="person-name">MARIO</h2>
+                        <div class="person-team">CORINTHIANS</div>
+                        <p class="person-desc">Torcedor apaixonado pelo Timão, aniversariante do dia!</p>
+                    </div>
+
+                    <div class="person-card jhonathan glass-card">
+                        <div class="person-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h2 class="person-name">JHONATHAN</h2>
+                        <div class="person-team">SÃO PAULO</div>
+                        <p class="person-desc">São-paulino de coração, também aniversariante do dia!</p>
+                    </div>
+                </div>
+
+                <div class="theme-card glass-card reveal">
+                    <div class="theme-title">TEMA DA FESTA</div>
+
+                    <div class="theme-display">
+                        <div class="theme-team corinthians">
+                            <div class="theme-team-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <div class="theme-team-name">CORINTHIANS</div>
+                        </div>
+
+                        <div class="theme-vs-large">VS</div>
+
+                        <div class="theme-team sao-paulo">
+                            <div class="theme-team-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <div class="theme-team-name">SÃO PAULO</div>
+                        </div>
+                    </div>
+
+                    <div class="theme-description">
+                        Uma celebração que une as duas torcidas! Cada aniversariante representa seu time favorito
+                        em uma festa temática do maior clássico paulista.
+                    </div>
+                </div>
+
+                <div class="address-card glass-card reveal">
+                    <div class="info-label"><i class="fas fa-map-marker-alt"></i> LOCAL DA FESTA</div>
+                    <div class="info-value">Rua Formula Sena, nº 42</div>
+                    <div class="info-value" style="font-size: 1.1rem; opacity: 0.8; margin-top: 5px;">Residencial
+                        Integracao</div>
+                </div>
+
+                <div class="countdown reveal">
+                    <div class="countdown-item glass-card">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Dias</div>
+                    </div>
+                    <div class="countdown-item glass-card">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item glass-card">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-item glass-card">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Traga sua energia e sua torcida! Vai ter comida, bebida e muita animação.</p>
+            <p>A festa terá decoração temática dos dois times e atividades especiais.</p>
+            <p class="highlight reveal">Sua presença é o nosso melhor presente!</p>
+
+            <div class="cta-buttons reveal">
+                <button class="btn btn-primary" id="confirmBtn">
+                    <i class="fas fa-check-circle"></i> CONFIRMAR PRESENÇA
+                </button>
+                <button class="btn btn-secondary" id="shareBtn">
+                    <i class="fas fa-share-alt"></i> COMPARTILHAR
+                </button>
+            </div>
+
+            <!-- Formulário de confirmação (inicialmente escondido) -->
+            <div id="confirmationForm" class="glass-card"
+                style="display: none; margin-top: 40px; padding: 30px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                <h3
+                    style="color: var(--gold); margin-bottom: 25px; text-align: center; font-family: 'Montserrat', sans-serif;">
+                    Confirmar Presença</h3>
+                <form id="attendanceForm">
+                    <div style="margin-bottom: 20px; text-align: left;">
+                        <label style="display: block; margin-bottom: 8px; color: #ccc; font-size: 0.9rem;">SEU
+                            NOME</label>
+                        <input type="text" required
+                            style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 25px; text-align: left;">
+                        <label style="display: block; margin-bottom: 12px; color: #ccc; font-size: 0.9rem;">VOCÊ TORCE
+                            PARA:</label>
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <label
+                                style="display: flex; align-items: center; gap: 8px; cursor: pointer; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 50px; border: 1px solid transparent; transition: all 0.3s;">
+                                <input type="radio" name="team" value="corinthians"
+                                    style="accent-color: var(--corinthians-red);">
+                                <span>Corinthians</span>
+                            </label>
+                            <label
+                                style="display: flex; align-items: center; gap: 8px; cursor: pointer; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 50px; border: 1px solid transparent; transition: all 0.3s;">
+                                <input type="radio" name="team" value="sao-paulo" style="accent-color: white;">
+                                <span>São Paulo</span>
+                            </label>
+                            <label
+                                style="display: flex; align-items: center; gap: 8px; cursor: pointer; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 50px; border: 1px solid transparent; transition: all 0.3s;">
+                                <input type="radio" name="team" value="outro" style="accent-color: var(--gold);">
+                                <span>Outro</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 30px; text-align: left;">
+                        <label style="display: block; margin-bottom: 8px; color: #ccc; font-size: 0.9rem;">NÚMERO DE
+                            ACOMPANHANTES</label>
+                        <input type="number" min="0" max="10" value="0"
+                            style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; font-size: 1rem;">
+                    </div>
+
+                    <div style="display: flex; gap: 15px; justify-content: center;">
+                        <button type="submit" class="btn btn-primary"
+                            style="min-width: 140px; font-size: 0.9rem;">ENVIAR</button>
+                        <button type="button" id="cancelBtn" class="btn btn-secondary"
+                            style="min-width: 140px; font-size: 0.9rem;">CANCELAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
